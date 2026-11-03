@@ -275,6 +275,56 @@ footer .logo-w img{height:40px}
   .chat{right:0;left:0;bottom:0;width:100%;max-width:100%;height:100%;max-height:100%;border-radius:0}
 }
 
+/* ---------- small phones (iPhone SE / mini and narrower) ---------- */
+.check>*,.explorer>*,.hero-grid>*,.comm>*,.visit-grid>*,.doc>*{min-width:0}
+@media(max-width:420px){
+  body{font-size:15px}
+  .wrap{padding:0 16px}
+  section{padding:52px 0}
+  h2{font-size:27px}
+  .lead{font-size:15.5px}
+  .btn{white-space:normal;text-align:center;padding:12px 18px;font-size:14.5px}
+  .demo{font-size:11.5px;padding:6px 10px}
+  .util{font-size:12px}.util .wrap{height:38px}
+  .lang button{padding:3px 9px}
+  .nav{height:62px}.logo img{height:36px}
+  .hero{padding:32px 0 56px}
+  .hero h1{font-size:36px}
+  .hero .lead{margin:16px 0 22px}
+  .cta .btn{flex:1 1 100%}
+  .stats{gap:18px;margin-top:30px;padding-top:20px}
+  .stats b{font-size:26px}
+  .stats span{font-size:12.5px;line-height:1.35;display:block}
+  .float{padding:9px 12px;font-size:12px;gap:8px}.float b{font-size:13px}.float .i{width:30px;height:30px}
+  .f1{top:6%}.f2{bottom:20%}.f3{bottom:-16px}
+  .marq{padding:12px 0}.marq .track{font-size:17px}
+  .doc .body{padding:20px}.doc h3{font-size:23px}
+  .pane{padding:20px;border-radius:20px}.pane h3{font-size:25px}
+  .by .btn{flex:1 1 100%}
+  .tour{grid-auto-rows:130px;gap:10px}
+  .tour .cap{font-size:11px;padding:4px 9px;left:8px;bottom:8px}
+  .check{padding:26px 18px;gap:28px}
+  .amsler{padding:10px}
+  .score b{font-size:44px}
+  .rail{grid-auto-columns:82vw;padding-top:28px}
+  .rev{padding:20px}
+  .card{padding:20px}
+  .hours td{font-size:13.5px;padding:10px 0}
+  .map,.map iframe{min-height:300px}
+  details{padding:16px 18px}
+  .launcher button{width:54px;height:54px}
+  .m{font-size:14px}.chip{font-size:13px;padding:7px 11px}
+}
+@media(max-width:340px){
+  .hero h1{font-size:32px}
+  .util .lang{transform:scale(.92)}
+  .float.f2{display:none}
+}
+/* short screens (e.g. iPhone SE height, landscape) */
+@media(max-height:620px){
+  .chat{bottom:0;height:100%;max-height:100%}
+}
+
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
@@ -525,7 +575,7 @@ footer .logo-w img{height:40px}
 
 <div class="mbar">
   <a class="btn b-ghost" href="tel:+919414036092">📞 Call</a>
-  <button class="btn b-primary" data-open-chat data-i="book">Book appointment</button>
+  <button class="btn b-primary" data-open-chat data-i="book2">📅 Book now</button>
 </div>
 
 <!-- CHATBOT -->
@@ -594,7 +644,7 @@ const REVIEWS = [
 /* ---------------- i18n ---------------- */
 const HI = {
   nav1:"डॉक्टर", nav2:"इलाज", nav3:"क्लिनिक टूर", nav4:"आँखों की जाँच", nav5:"रिव्यू", nav6:"संपर्क",
-  book:"अपॉइंटमेंट बुक करें",
+  book:"अपॉइंटमेंट बुक करें", book2:"📅 बुक करें",
   h_k:"आँखों की संपूर्ण देखभाल · चित्रकूट, जयपुर · 2011 से",
   h_t:'हर आँख को मिले <span class="hl">पूरी रोशनी।</span>',
   h_s:"मोतियाबिंद, लेसिक, कॉर्निया, रेटिना और काला मोतिया के फ़ेलोशिप-प्रशिक्षित विशेषज्ञ। आधुनिक जाँच मशीनें, अपना ऑपरेशन थिएटर और चश्मे की दुकान, सब एक ही जगह।",
